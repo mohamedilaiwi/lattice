@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+.lattice/
+.DS_Store
+*.log
+
+# Tauri/Rust build output
+src-tauri/target/

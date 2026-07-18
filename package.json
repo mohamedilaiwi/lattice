@@ -1,0 +1,31 @@
+{
+  "name": "lattice",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A local-first, agentic learning workspace.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npm run build:web",
+    "build:web": "tsc --project tsconfig.build.json",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build",
+    "fix": "npm run format && npm run lint:fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix",
+    "tauri:build:debug": "tauri build --debug",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@tauri-apps/cli": "^2.4.1",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0",
+    "vitest": "^3.0.9"
+  }
+}
