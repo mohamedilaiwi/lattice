@@ -2,3 +2,7 @@ node_modules/
 dist/
 coverage/
 src-tauri/target/
+src-tauri/target/
+src-tauri/gen/
+src-tauri/icons/
+src/lib/markdown/fixtures/

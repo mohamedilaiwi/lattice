@@ -7,3 +7,6 @@ coverage/
 
 # Tauri/Rust build output
 src-tauri/target/
+
+# Tauri generated schemas
+src-tauri/gen/
